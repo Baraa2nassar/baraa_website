@@ -179,7 +179,6 @@
   <div class="container">
     <h1>Projects</h1>
     <br>
-
         <div class="row row-cols-1 row-cols-md-3 g-4">
 
           <div class="col">
@@ -231,13 +230,14 @@
             </div>
           </div>
 
+
           <div class="col hidden-card">
             <div class="card h-100">
               <div class="project-box">
                 <img src="img/wallee_banner.png" class="card-img-top" alt="Project Image">
                 <div class="project-box-overlay">
                   <h3>Wall-e Shop</h3>
-                  <a href="#" target="_blank">Wall-e Shop</a>
+                  <a target="_blank">Wall-e Shop</a>
                 </div>
               </div>
               <div class="card-body">
@@ -247,6 +247,26 @@
             </div>
           </div>
 
+          <div class="col hidden-card">
+            <div class="card h-100">
+              <div class="project-box">
+                <img src="img/verify_banner.png" class="card-img-top" alt="Project Image">
+                <div class="project-box-overlay">
+                  <h3>School Verification Bot</h3>
+                  <a href="https://github.com/InterMSA/InterMSA-Bot" target="_blank">Verification Bot</a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">School Verification Bot</h5>
+                <p class="card-title">Discord App: Two way Authentication Tool</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <button class="btn">View More Projects</button> -->
+
+
+
     </div>
   </div>
 
@@ -254,7 +274,7 @@
 
 
   <div class="text-center">
-    <button type="button" onclick="toggleCards()" class="btn btn-secondary">View More Projects</button>
+    <button type="btn" onclick="toggleCards()" class="btn btn-secondary">View More Projects</button>
   </div>
 
 
@@ -339,12 +359,24 @@
 </script>
 
 <script>
-function toggleCards() {
-    var cards = document.getElementsByClassName("hidden-card");
-    for (var i = 0; i < cards.length; i++) {
-      cards[i].classList.remove("hidden-card");
+  function toggleCards() {
+    const btn = document.querySelector(".btn");
+    const cards = document.querySelectorAll(".col");
+
+    // Check if some cards are hidden
+    if (cards[3].classList.contains("hidden-card")) {
+      // Show all cards
+      cards.forEach(card => {
+        card.classList.remove("hidden-card");
+      });
+      btn.textContent = "Show Less Projects";
+    } else {
+      // Hide some cards
+      for (let i = 3; i < cards.length; i++) {
+        cards[i].classList.add("hidden-card");
+      }
+      btn.textContent = "View More Projects";
     }
-    document.querySelector(".btn").style.display = "none";
   }
 
 </script>
