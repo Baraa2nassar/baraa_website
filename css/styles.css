@@ -1,5 +1,7 @@
 .bg-brown {
   background-color: #464242; /* This is a shade of brown */
+}.bg-light-brown {
+  background-color: #6e6868; /* This is a shade of brown */
 }
 .bg-nav-brown {
   background-color: #322D2D; /* This is a shade of brown */
@@ -28,6 +30,10 @@ section {
 section:hover {
   transform: scale(1.02);
 }
+  strong {
+    display: block;
+    text-align: left;
+  }
 
 .accordion {
   width: 120px;
@@ -222,5 +228,62 @@ section:hover {
 .project-box:hover .project-box-overlay {
   opacity: 1;
 }
+.future-card {
+  opacity: 0.6;
+}
 
+    .horizontal-timeline .items {
+      border-top: 3px solid #e9ecef;
+    }
 
+    .horizontal-timeline .items .items-list {
+      display: block;
+      position: relative;
+      text-align: center;
+      padding-top: 70px;
+      margin-right: 0;
+    }
+
+    .horizontal-timeline .items .items-list:before {
+      content: "";
+      position: absolute;
+      height: 36px;
+      border-right: 2px dashed #dee2e6;
+      top: 0;
+    }
+
+    .horizontal-timeline .items .items-list.current:before {
+      border-color: #f00; /* Change color for current item */
+    }
+
+    .horizontal-timeline .items .items-list .event-date {
+      position: absolute;
+      top: 36px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      padding-top: 8px;
+      text-align: center;
+      width: 70%;
+    }
+
+    .horizontal-timeline .items .items-list.current .event-date {
+      color: #f00; /* Change color for current item */
+    }
+
+    @media (min-width: 1140px) {
+      .horizontal-timeline .items .items-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+      }
+
+      .horizontal-timeline .items .items-list .event-date {
+        top: -40px;
+      }
+    }
+
+  .hidden-card {
+    display: none;
+  }
