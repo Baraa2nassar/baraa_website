@@ -1,3 +1,136 @@
+  .shape {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    animation: fade 6s infinite;
+  }
+  #about-me {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .triangle{
+      content: "";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+
+      /*  Left Border */
+      border-left-width: 3px;
+      border-left-style: solid;
+      border-left-color: #e1dfdf;
+
+      /*  Top Border */
+      border-top-width: 3px;
+      border-top-style: solid ;
+      border-top-color: #e1dfdf;
+
+      /*  Bottom Border */
+      border-bottom-width: 3px;
+      border-bottom-style: solid #e1dfdf;
+      border-bottom-color: transparent;
+
+      /*  Rotate it to 45deg and skew  */
+      transform: rotate(45deg) skew(10deg,10deg);
+
+      /*  Position it until you meet the corners  */
+      left: -2px;
+      bottom: -13px
+  }
+
+
+  .square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #e1dfdf;
+    /*opacity: ;*/
+  }
+
+  
+  .x {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .x:before, .x:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    background-color: #e1dfdf;
+  }
+  
+  .x:before {
+    transform: rotate(45deg);
+  }
+  
+  .x:after {
+    transform: rotate(-45deg);
+  }
+  
+  /* Animation */
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Positioning */
+/* Positioning */
+#shape1 {
+  top: 20%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+#shape1:nth-child(2) {
+  top: 80%;
+  left: 60%;
+  animation-delay: 1s;
+}
+
+#shape2 {
+  top: 25%;
+  left: 55%;
+  animation-delay: 2s;
+}
+
+#shape2:nth-child(2) {
+  top: 65%;
+  left: 35%;
+  animation-delay: 3s;
+}
+
+#shape3 {
+  top: 60%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+#shape3:nth-child(2) {
+  top: 35%;
+  left:}
+
+#shape4 {
+  top: calc(80% + 50px);
+  left: calc(60% + 50px);
+  animation-delay: 1s;
+}
+
+
+
+
+
+
 .bg-brown {
   background-color: #464242; /* This is a shade of brown */
 }.bg-light-brown {
@@ -9,6 +142,8 @@
 
 .bg-off-white{
   background-color: #EAEAEA;
+}.bg-off-gray{
+  background-color: #f9f8f8;
 }
 
 body {
