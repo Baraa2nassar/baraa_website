@@ -1,3 +1,12 @@
+  
+    /* Set height to 200px for screens smaller than 768px */
+    @media (max-width: 768px) {
+      .bg-image {
+        height: 200px;
+      }
+    }
+
+
   .shape {
     position: absolute;
     z-index: -1;
@@ -142,7 +151,11 @@
 
 .bg-off-white{
   background-color: #EAEAEA;
-}.bg-off-gray{
+}
+.bg-dark-white{
+  background-color: #D3D1D1;
+}
+.bg-off-gray{
   background-color: #f9f8f8;
 }
 
@@ -164,6 +177,10 @@ section {
 
 section:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: 2px solid #6e6868;
+  outline-offset: -2px;
+  border-radius: 10%;
 }
   strong {
     display: block;
@@ -302,10 +319,6 @@ section:hover {
 }
 
 /* Add hover effect to project circles */
-.project-circle:hover {
-  transform: scale(1.01);
-  transition: transform 0.3s ease-in-out;
-}
 .project-boxes {
   display: flex;
   flex-wrap: wrap;

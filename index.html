@@ -7,6 +7,13 @@
   <!DOCTYPE html>
   <html lang="en">
   <head>
+    <script type="text/javascript">
+      const path = window.location.pathname;
+      if (path === "/photos" || path === "/edit" || path === "/creative") {
+        window.location.replace("photo.html");
+      }
+    </script>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJN18TSWLN"></script>
@@ -68,7 +75,7 @@
   </head>
   <body >
     <nav class="navbar navbar-expand-lg navbar-dark bg-nav-brown">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -169,14 +176,14 @@
            <div class="px-4">
              <div class="event-date badge bg-info">Sep 2021 – Present</div>
              <h5 class="pt-2">InterMSA | Tech Master</h5>
-             <section>
 
              <div class="card bg-light mb-3">
+             <section>
                <div class="card-body">
                  <p class="card-text text-muted text-left">Reduced hosting costs by 99.85% through AWS to Google Cloud Platform migration, managed and updated InterMSA website with Angular, and led technical committee to develop tech initiatives for hundreds of students.</p>
                </div>
-             </div>
            </section>
+             </div>
            </div>
          </li>
 
@@ -184,21 +191,21 @@
            <div class="px-4">
              <div class="event-date badge bg-danger text-light">2023-Present</div>
              <h5 class="pt-2">HawkHack | OP Leader</h5>
-             <section>
              <div class="card bg-light mb-3">
+             <section>
                <div class="card-body">
                  <p class="card-text text-muted text-left">Organized and led a hackathon for 200+ students to build personal coding projects and network with like-minded individuals. Collaborated with cross-functional teams to ensure cohesive planning and execution.</p>
                </div>
-             </div>
            </section>
+             </div>
            </div>
          </li>
          <li class="list-inline-item items-list future-card">
            <div class="px-4">
              <div class="event-date badge bg-warning text-muted">2019-2023</div>
              <h5 class="pt-2 text-muted">MSU GRAD</h5>
-              <section>
              <div class="card bg-light mb-3 future-card"> <!-- add class "future-card" to the card -->
+              <section>
                <div class="card-body">
                  <p class="card-text text-muted text-left">This coming May will be the conclusion of my 4 years bachlors degree as computer science major. </p>
                  <strong class="card-text text-muted text-left"> Awards:</strong>
@@ -206,8 +213,8 @@
                 
 
                </div>
-             </div>
            </section>
+             </div>
            </div>
          </li>
           <!-- </ul> -->
