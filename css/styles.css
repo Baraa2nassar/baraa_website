@@ -159,6 +159,11 @@
   background-color: #f9f8f8;
 }
 
+.dropdown-item.active {
+  background-color: #6e6868 !important;
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -319,6 +324,12 @@ section:hover {
 }
 
 /* Add hover effect to project circles */
+.card-img-top {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
 .project-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -327,11 +338,6 @@ section:hover {
   max-width: 1200px;
 }
 
-/*.project-box {
-  position: relative;
-  width: calc(33.33% - 20px);
-  margin-bottom: 40px;
-}*/
 
 .project-box img {
   width: 100%;
@@ -352,6 +358,7 @@ section:hover {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: all 0.3s ease;
+  
 }
 
 .project-box-overlay h3 {
