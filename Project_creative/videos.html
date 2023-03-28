@@ -18,6 +18,9 @@
       gtag('config', 'G-EJN18TSWLN');
     </script>
 
+   
+
+
     <link rel="icon" href="img/100pxtab_icon.png" type="image/x-icon">
 
     <meta property="og:title" content="Baraa Nassar">
@@ -32,64 +35,140 @@
     <link rel="icon" href="img/100pxtab_icon.png" type="image/x-icon" alt="baraa logo">
 
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <title>Baraa Nassar</title>
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-4Y4a/wl4Xl/zdL58cS+pS5zNTmCgx0a2Q0OG4+4J4YyM4jmX9dLLJt+lOVo1wtapNtK+k+OgNvA/04bBy2+C+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <!-- font awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-  />
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-  />
-  <!-- MDB -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
-    rel="stylesheet"
-  />
+    rel="stylesheet">
 
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+ <style>
+
+  /* Loop through all elements with class "fading" */
+  .fading {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+  /* Set animation-delay for each element using nth-child() selector */
+  .fading:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .fading:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fading:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .fading:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+ .fading:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+ .fading:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+ .fading:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+ .fading:nth-child(8) {
+    animation-delay: .8s;
+  }
+ .fading:nth-child(9) {
+    animation-delay: .9s;
+  }
+ .fading:nth-child(10) {
+    animation-delay: 1.0s;
+  } .fading:nth-child(11) {
+    animation-delay: 1.1s;
+  } .fading:nth-child(12) {
+    animation-delay: 1.2s;
+  }
+
+  .photo-gallery .item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .spaced-img {
+    margin-top: 20px;
+  }
+
+  .pic_scale{
+  transition: all 0.2s ease-in-out;
+}
+/*.container {
+  overflow: hidden;
+}*/
+
+.pic_scale:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: 2px solid white;
+  outline-offset: -2px;
+  margin: 1px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+</style>
+
   </head>
   <body >
     <nav class="navbar navbar-expand-lg navbar-dark bg-nav-brown">
-
       <a class="navbar-brand" href="index.html">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about-me">About Me (Video Editor)</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Me
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item " href="../index.html">Software Engineer</a>
+              <a class="dropdown-item active" href="creative.html">📸 Creative Showreel</a>
+
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Software Engineer</a>
+            <a class="nav-link disabled" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#contact-me">Contact Me</a>
+            <a class="nav-link" href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </div>
     </nav>
+
  <div class="position-relative">
-   <div class="p-5 text-center bg-image d-block d-md-none" style="background-image: url('img/photos.png'); height: 200px;">
+   <div class="p-5 text-center bg-image d-block d-md-none" style="background-image: url('../img/video_banner.avif'); height: 200px;">
      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
        <div class="d-flex justify-content-center align-items-center h-100">
          <div class="text-white">
@@ -99,18 +178,18 @@
      </div>
    </div>
 
-   <div class="p-5 text-center bg-image d-none d-md-block" style="background-image: url('img/photos.png'); height: 400px;">
+   <div class="p-5 text-center bg-image d-none d-md-block" style="background-image: url('../img/video_banner.avif'); height: 400px;">
      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
        <div class="d-flex justify-content-center align-items-center h-100">
          <div class="text-white">
-    		                <h1 class="mb-3">Creative Showreel</h1>
-    		                <h4 class="mb-3"></h4>
-    		            </div>
-    		        </div>
-    		    </div>
-    		</div>
+                        <h1 class="mb-3">Creative Showreel</h1>
+                        <h4 class="mb-3"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    	</div>
+      </div>
 
 
 
@@ -128,91 +207,111 @@
 
   </div>
 
+<div id="Projects" class="container-fluid bg-brown py-5">
+  <div class="container">
+    <h1 class="text-light">Videos</h1>
+    <div class="col-sm-8 col-md-6">
+       <div class="embed-responsive embed-responsive-16by9">
 
-   <div id="Projects" class="container-fluid bg-dark-white py-5">
-    <div class="container">
-      <h1>Projects</h1>
-      <br>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="project-box">
-              <img src="https://elements-cover-images-0.imgix.net/d4a4ceae-de6c-4b33-a855-43b0bf30950c?auto=compress%2Cformat&fit=max&w=1370&s=217ec6a6d64dce6529006d6f3c84d564" class="card-img-top" alt="Photography banner project">
-              <div class="project-box-overlay">
-                <h3>Photos</h3>
-                <a href="project/philoi.html" >View Photos</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Photography</h5>
-              <!-- <p class="card-title">Photos I took</p> -->
-            </div>
-          </div>
-        </div>
-
-                <div class="col">
-          <div class="card h-100">
-            <div class="project-box">
-              <img src="https://elements-cover-images-0.imgix.net/4d72030e-7c41-4053-9456-2f9c36c93e61?auto=compress%2Cformat&fit=max&w=1370&s=342af1674eea677b88494c24051569a8" class="card-img-top" alt="Philoi banner project">
-              <div class="project-box-overlay">
-                <h3>Video edit</h3>
-                <a href="project/philoi.html" >View Videos</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Video Edits</h5>
-              <!-- <p class="card-title">Video projects</p> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="project-box">
-              <img src="https://elements-cover-images-0.imgix.net/d48d8731-16ba-4bb7-9da9-985d5016295f?auto=compress%2Cformat&fit=max&w=1370&s=80e315b85a8918d949de3d830659e546" class="card-img-top" alt="Philoi banner project">
-              <div class="project-box-overlay">
-                <h3>Graphic designs</h3>
-                <a href="project/philoi.html" >View Graphics</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Graphic designs</h5>
-              <!-- <p class="card-title">Game-Based Learning Web Application</p> -->
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4FEIlZBXXWQ" frameborder="0" allowfullscreen></iframe>
+       </div>
     </div>
+
+<br>
+            <div class="col-sm-8 col-md-6">
+               <div class="embed-responsive embed-responsive-16by9">
+
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bDSGAFstCxw" frameborder="0" allowfullscreen></iframe>
+               </div>
+            </div>
+
+            <br>
+                        <div class="col-sm-8 col-md-6">
+               <div class="embed-responsive embed-responsive-16by9">
+
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4raBxxXTo6Q" frameborder="0" allowfullscreen></iframe>
+               </div>
+            </div>
+
 
     <br>
 
+    <div class="container">
+  <div class="row">
 
-  </div>
-
-
-
-
-    <div id="" class="container-fluid bg-brown text-white py-5">
-      <div class="container">
-<!--         <h1>Contact Me</h1>
-        <p>Let's connect! As a software engineer and final-year computer science student, I'm always interested in meeting new people and learning about exciting opportunities. Feel free to reach out to me using the contact form below or via email at <a href="mailto:baraa2aziz@gmail.com">baraa2aziz@gmail.com</a>
-
-        </p> -->
+    <div class="col-sm-6">
+      <div class="embed-responsive embed-responsive-16by9" style="height: 100vh;">
+        <iframe class="embed-responsive-item" src="https://www.instagram.com/reel/CdFYRnNLQKe/embed/" frameborder="0" allowfullscreen scrolling="no"></iframe>
       </div>
     </div>
+    <div class="break"></div>
+
+    <style>
+      /* Default styles */
+      .break {
+        display: none;
+      }
+      
+      /* Styles for small screens */
+      @media only screen and (max-width: 768px) {
+        .break {
+          display: block;
+          height: 1em;
+        }
+      }
+    </style>
+
+    
+     <div class="col-sm-6 d-none d-sm-block">
+          <div class="embed-responsive embed-responsive-16by9" style="height: 100vh;">
+            <iframe class="embed-responsive-item" src="https://www.instagram.com/p/CKkofaLgpRu/embed/" frameborder="0" allowfullscreen scrolling="no"></iframe>
+          </div>
+        </div>
+
+    <div><br></div>
+        <div class="col-sm-6">
+          <div class="embed-responsive embed-responsive-16by9" style="height: 70vh;">
+            <iframe class="embed-responsive-item d-block d-md-none" src="https://www.instagram.com/p/CKkofaLgpRu/embed/" frameborder="0" allowfullscreen scrolling="no"></iframe>
+          </div>
+        </div>
+
+ 
+
+    <br>
+
+  </div>
+</div>
+
+
+  </div>
+  <br>
+
+  <div class="text-center">
+    <a href="../creative.html"><button type="bread" class="bread btn btn-secondary">back to Showreel</button></a>
+  </div>
+
+</div>
+
+
+    <div id="contact-me" class="container-fluid bg-light-brown text-white py-5">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <a class="btn btn-light" href="mailto:baraa2aziz@gmail.com">baraa2aziz@gmail.com</a>
+
+        </p>
+      </div>
+    </div>
+
+
+
     
   <footer class="footer mt-auto py-3 bg-nav-brown">
 
     <div class="container d-flex justify-content-between align-items-center">
 
-      <span class="text-light">Baraa Nassar © 2023</span>
+      <span class="text-light">Baraa Nassar</span>
 
-    <div class="accordion">
+    <div class="accordion justify-content-center text-center align-items-center">
     <ul>
       
       <li>
@@ -246,39 +345,48 @@
     </div>
   </footer>
 
+
 <script>
-  // Get the shape elements
-  const shape1 = document.querySelector('#shape1');
-  const shape2 = document.querySelector('#shape2');
-  const shape3 = document.querySelector('#shape3');
-  const shape4 = document.querySelector('#shape4');
-
-  // Set the positions of the shapes randomly
-  shape1.style.top = Math.random() * 80 + '%';
-  shape1.style.left = Math.random() * 80 + '%';
-
-  shape2.style.top = Math.random() * 80 + '%';
-  shape2.style.left = Math.random() * 80 + '%';
-
-  shape3.style.top = Math.random() * 80 + '%';
-  shape3.style.left = Math.random() * 80 + '%';
-
-  shape4.style.top = Math.random() * 80 + '%';
-  shape4.style.left = Math.random() * 80 + '%';
-
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 </script>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
-  ></script>
+  <!-- Lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
+ <style>
+
+  .lb-loader {
+    display: none !important;
+  }
+
+   .lb-outerContainer {
+     border-radius: 3px;
+     border: 3px solid gray;
+     position: relative;
+     background-color: black;
+     box-sizing: border-box;
+   }
+
+
+
+ </style>
+
+
+
+
+  <!-- MDB-UI-Kit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
 
 
 
